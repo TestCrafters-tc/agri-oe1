@@ -3789,8 +3789,10 @@ header {
     font-weight: 600;
     display: inline-block; /* Make sure the logo appears as inline text */
     background: linear-gradient(to right, #FFFFE0, #A0522D); /* Light Yellow to Sienna */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; /* Applies gradient to text */
+    -webkit-text-fill-color: transparent; /* Makes the text transparent so the gradient is visible */
+    background-clip: text; /* Standard version for future support */
+    color: transparent; /* Fallback for browsers that don't support the WebKit version */
 }
 
 /* Adjusted Timer Styling */
