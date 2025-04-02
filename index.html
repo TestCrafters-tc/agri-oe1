@@ -4099,9 +4099,11 @@ footer {
         --container-width: 95%;
     }
 
-    .question {
-        flex: 0 0 100%;
-    }
+     .question {
+    display: block; /* This is the default for div elements, but ensure it's not overridden */
+    width: 100%;    /* Make it take full width if needed */
+    word-wrap: break-word; /* If the line is very long, force it to wrap */
+}
 
     .question-number {
         font-size: 1rem;
